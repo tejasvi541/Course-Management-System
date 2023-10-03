@@ -44,9 +44,7 @@ const SidebarItem = ({ icon: Icon, label, href }: SidebarItemProps) => {
         className={cn(
           "ml-auto opacity-0 border-r-4 h-full border-sky-700  transition-all",
           isActive && "opacity-100"
-        )}>
-        |
-      </div>
+        )}></div>
     </button>
   );
 };
