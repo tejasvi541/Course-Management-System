@@ -23,4 +23,3 @@ export const FileUpload = ({ onChange, endpoint }: FileUploadProps) => {
     />
   );
 };
-type UploadDropzone = typeof UploadDropzone;
