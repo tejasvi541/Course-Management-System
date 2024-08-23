@@ -31,7 +31,7 @@ const formSchema = z.object({
   title: z.string().min(1),
 });
 
-const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
+export const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
   const [isCreating, setIsCreating] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
 
@@ -149,4 +149,3 @@ const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
     </div>
   );
 };
-export default ChaptersForm;

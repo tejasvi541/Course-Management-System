@@ -30,7 +30,7 @@ const formSchema = z.object({
   price: z.coerce.number(),
 });
 
-const PriceForm = ({ initialData, courseId }: PriceFormProps) => {
+export const PriceForm = ({ initialData, courseId }: PriceFormProps) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const toggleEdit = () => setIsEditing((current) => !current);
@@ -115,5 +115,3 @@ const PriceForm = ({ initialData, courseId }: PriceFormProps) => {
     </div>
   );
 };
-
-export default PriceForm;

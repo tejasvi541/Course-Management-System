@@ -32,7 +32,10 @@ const formSchema = z.object({
   }),
 });
 
-const DescriptionForm = ({ initialData, courseId }: DescriptionFormProps) => {
+export const DescriptionForm = ({
+  initialData,
+  courseId,
+}: DescriptionFormProps) => {
   const [isEditing, setIsEditing] = useState(false);
 
   const toggleEdit = () => setIsEditing((current) => !current);
@@ -115,5 +118,3 @@ const DescriptionForm = ({ initialData, courseId }: DescriptionFormProps) => {
     </div>
   );
 };
-
-export default DescriptionForm;
