@@ -19,7 +19,6 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Textarea } from "@/components/ui/textarea";
 import { Combobox } from "@/components/ui/combobox";
 
 interface CategoryFormProps {
@@ -70,7 +69,7 @@ export const CategoryForm = ({
   return (
     <div className="mt-6 border bg-slate-100 rounded-md p-4">
       <div className="font-medium flex items-center justify-between">
-        Course Category
+        Course category
         <Button onClick={toggleEdit} variant="ghost">
           {isEditing ? (
             <>Cancel</>
@@ -102,7 +101,7 @@ export const CategoryForm = ({
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Combobox options={...options} {...field} />
+                    <Combobox options={options} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
